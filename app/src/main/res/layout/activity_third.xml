@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A9F4"
+    tools:context=".pertemuan_3.ThirdActivity">
+
+    <EditText
+        android:id="@+id/inputNoTujuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:backgroundTint="#F3EDF5"
+        android:ems="12"
+        android:fontFamily="sans-serif-medium"
+        android:hint="inputkan nomor tujuan"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#F3EDF5"
+        android:textColorHint="#F3EDF5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.706"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.567" />
+
+    <Button
+        android:id="@+id/btnKirim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#F3EDF5"
+        android:textColor="#E90505"
+        android:textStyle="bold"
+        app:cornerRadius="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/kirim"
+        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputNoTujuan" />
+
+    <ImageView
+        android:layout_width="137dp"
+        android:layout_height="186dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/img_1"
+        app:layout_constraintBottom_toTopOf="@+id/inputNoTujuan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_variablefont_wght"
+        android:text="Selamat Sore Dunia"
+        android:textColor="#ffff"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rania App"
+        android:textColor="#ffff"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnKirim"
+        app:layout_constraintVertical_bias="0.516" />
+</androidx.constraintlayout.widget.ConstraintLayout>
