@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <!-- ✅ WAJIB untuk WebView -->
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -14,13 +14,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RaniaApps">
         <activity
+            android:name=".AuthActivity"
+            android:exported="false" />
+        <activity
             android:name=".pertemuan_5.FifthActivity"
             android:exported="false" />
         <activity
             android:name=".pertemuan_5.WebViewActivity"
             android:exported="false" />
         <activity
-            android:name=".AuthActivity"
+            android:name=".SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
