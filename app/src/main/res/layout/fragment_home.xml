@@ -3,16 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
-    tools:context=".Home.pertemuan_7.SatuFragment">
+    android:background="#F4AFE3"
+    tools:context=".Home.HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textSize="30sp"
-        android:textStyle="bold"
+        android:textStyle="italic"
         android:textColor="@color/white"
-        android:text="Pergi Kepasar Membeli Bawang" />
+        android:text="Ini Fragment Home" />
 
 </FrameLayout>

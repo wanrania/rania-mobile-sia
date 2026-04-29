@@ -1,4 +1,4 @@
-package com.example.raniaapps.pertemuan_2
+package com.example.raniaapps.Home.pertemuan_2
 
 fun main() {
     println("Hai rekan-rekan...")

@@ -1,4 +1,4 @@
-package com.example.raniaapps.pertemuan_5
+package com.example.raniaapps.Home.pertemuan_5
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,8 +7,11 @@ import android.view.MenuItem
 import android.widget.Button
 import android.widget.TextView
 import android.view.Gravity
+import android.view.View
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.raniaapps.R
@@ -23,7 +26,7 @@ class FifthActivity : AppCompatActivity() {
         // =========================
         // TOOLBAR SETUP
         // =========================
-        val toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.toolbar)
+        val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
 
         // 🔥 TOOLBAR STYLE IMPROVEMENT
@@ -44,7 +47,7 @@ class FifthActivity : AppCompatActivity() {
             val view = toolbar.getChildAt(i)
             if (view is TextView) {
                 view.gravity = Gravity.CENTER
-                view.textAlignment = android.view.View.TEXT_ALIGNMENT_CENTER
+                view.textAlignment = View.TEXT_ALIGNMENT_CENTER
             }
         }
 
@@ -90,7 +93,7 @@ class FifthActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
         // 🔥 small animation feedback
-        val rootView = findViewById<android.view.View>(R.id.main)
+        val rootView = findViewById<View>(R.id.main)
         rootView.animate()
             .alpha(0.95f)
             .setDuration(100)
@@ -106,10 +109,10 @@ class FifthActivity : AppCompatActivity() {
             }
 
             R.id.action_search -> {
-                android.widget.Toast.makeText(
+                Toast.makeText(
                     this,
                     "🔍 Searching data...",
-                    android.widget.Toast.LENGTH_SHORT
+                    Toast.LENGTH_SHORT
                 ).show()
 
                 // update subtitle UI
@@ -118,10 +121,10 @@ class FifthActivity : AppCompatActivity() {
             }
 
             R.id.action_settings -> {
-                android.widget.Toast.makeText(
+                Toast.makeText(
                     this,
                     "⚙️ Open Settings",
-                    android.widget.Toast.LENGTH_SHORT
+                    Toast.LENGTH_SHORT
                 ).show()
 
                 // update subtitle UI

@@ -4,16 +4,15 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.raniaapps.databinding.ActivityMainBinding
-import com.example.raniaapps.pertemuan_2.SecondActivity
-import com.example.raniaapps.pertemuan_3.ThirdActivity
-import com.example.raniaapps.pertemuan_4.FourthActivity
-import com.example.raniaapps.pertemuan_5.FifthActivity
-import com.example.raniaapps.pertemuan_7.SeventhActivity
+import com.example.raniaapps.Home.pertemuan_2.SecondActivity
+import com.example.raniaapps.Home.pertemuan_3.ThirdActivity
+import com.example.raniaapps.Home.pertemuan_4.FourthActivity
+import com.example.raniaapps.Home.pertemuan_5.FifthActivity
+import com.example.raniaapps.Home.pertemuan_7.SeventhActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class MainActivity : AppCompatActivity() {

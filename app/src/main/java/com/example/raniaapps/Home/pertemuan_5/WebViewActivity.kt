@@ -1,6 +1,8 @@
-package com.example.raniaapps.pertemuan_5
+package com.example.raniaapps.Home.pertemuan_5
 
 import android.os.Bundle
+import android.view.View
+import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
@@ -32,7 +34,7 @@ class WebViewActivity : AppCompatActivity() {
 
         binding.webView.webViewClient = object : WebViewClient() {
 
-            override fun onPageFinished(view: android.webkit.WebView?, url: String?) {
+            override fun onPageFinished(view: WebView?, url: String?) {
                 super.onPageFinished(view, url)
 
                 binding.webView.animate()
@@ -51,7 +53,7 @@ class WebViewActivity : AppCompatActivity() {
         binding.webView.settings.displayZoomControls = false
 
 // 🔥 OVER SCROLL
-        binding.webView.overScrollMode = android.view.View.OVER_SCROLL_ALWAYS
+        binding.webView.overScrollMode = View.OVER_SCROLL_ALWAYS
 
 // load terakhir
         binding.webView.loadUrl("https://merdeka.com")
